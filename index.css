@@ -1,0 +1,211 @@
+body {
+    background-color: rgba(14, 11, 11, 0.932);
+}
+
+section {
+    height: 500px;
+    width: auto;
+}
+
+nav>ul {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav>ul>li {
+    margin-right: 35px;
+    color: white;
+}
+
+
+/* profile */
+
+.wrapper__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* left */
+
+.wpro__name>ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.wpro__name-name {
+    font-family: "PT Serif", serif;
+    font-size: 60px;
+    color: white;
+}
+
+.wpro__name-profession {
+    font-family: "Roboto Mono", monospace;
+    font-size: xx-large;
+    color: white;
+}
+
+
+/* right */
+
+.wpro__pic {
+    background-image: url("images/desk.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 300px;
+    height: 200px;
+    width: 200px;
+}
+
+.wpro__pic {
+    height: 300px;
+    width: 300px;
+}
+
+@media (min-width: 576px) {
+    .wrapper__profile {
+        flex-direction: row;
+    }
+    .wpro__name {
+        width: 250px;
+    }
+    .wpro__pic {
+        height: 400px;
+        width: 400px;
+    }
+    /* body {
+        background-color: pink;
+    } */
+}
+
+@media (min-width: 768px) {
+    /* body {
+        background-color: gold;
+    } */
+    .wpro__name {
+        width: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        margin: 0 100px;
+    }
+    /* body {
+        background-color: grey;
+    } */
+}
+
+
+/* products */
+
+.wrapper__product {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.wp__card {
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.wp__img {
+    background-image: url("images/desk.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 300px;
+    height: 150px;
+    width: 150px;
+}
+
+
+/* order */
+
+.wrapper_order {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper_order>div {
+    background-color: grey;
+}
+
+.wrapper_order>div>img {
+    height: 100%;
+    width: 100%;
+}
+
+.wo__box {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media (min-width: 576px) {
+    .wrapper_order {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+
+/* testomonial */
+
+
+/* products */
+
+.product__title {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    font-size: xx-large;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+
+/* testmonial */
+
+
+/* footer */
+
+.wrapper__footer {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+}
+
+.wf__name {
+    font-family: "Roboto Mono", monospace;
+    font-size: xx-large;
+    color: white;
+}
+
+.wrapper__footer>li {
+    margin: 20px;
+    color: white;
+}
